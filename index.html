@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FTC Case Lookup</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 50px; background-color: #f4f4f4; }
+    input, button { padding: 10px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1>FTC Case Lookup</h1>
+  <p>Enter your Case ID to proceed:</p>
+  <input type="text" id="caseId" placeholder="Enter Case ID">
+  <br>
+  <button onclick="checkCase()">Submit</button>
+
+  <script>
+    function checkCase() {
+      const caseId = document.getElementById("caseId").value;
+      if (caseId === "789230") {
+        window.location.href = "case-789230.html";
+      } else {
+        alert("Invalid Case ID. Try again.");
+      }
+    }
+  </script>
+</body>
+</html>
